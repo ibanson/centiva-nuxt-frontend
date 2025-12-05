@@ -126,6 +126,22 @@ Deux composables principaux structurent la logique partagée :
 
 ---
 
+## ⚠️ Dépendance au backend Laravel
+
+Ce frontend dépend de l’API Laravel, disponible ici :
+**https://github.com/ibanson/centiva-laravel-api**
+
+Avant de lancer Nuxt, assurez-vous que le serveur Laravel est démarré :
+
+```bash
+php artisan serve
+# ou l’équivalent selon votre environnement
+```
+
+Sans l’API active, les pages `/teams` et `/brokers` ne pourront pas charger les données.
+
+---
+
 ## Démarrage (frontend uniquement)
 
 ```bash
