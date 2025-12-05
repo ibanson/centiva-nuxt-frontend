@@ -3,7 +3,7 @@
 Ce dépôt contient **le frontend du test technique Centiva**, développé en **Nuxt 3 avec rendu serveur (SSR)**, conformément aux exigences du document fourni.
 
 > ⚠️ Ce README ne concerne **que le frontend**.
-> Le backend Laravel possède son propre fichier `README.md` dans son dépôt dédié.
+> Le backend Laravel possède son propre fichier `README.md` dans son dépôt dédié : **https://github.com/ibanson/centiva-laravel-api**
 
 ---
 
