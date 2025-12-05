@@ -70,8 +70,6 @@ Les principales pages implémentées sont :
 |-----------------|------------------------------------------------|
 | `/teams`        | Liste toutes les équipes                      |
 | `/teams/[id]`   | Affiche une équipe et la liste de ses courtiers |
-| `/brokers`      | Liste tous les courtiers                      |
-| `/brokers/[id]` | Affiche un courtier et l’équipe à laquelle il appartient |
 
 Toutes ces pages utilisent `useFetch()` en mode SSR pour récupérer les données avant rendu.
 
