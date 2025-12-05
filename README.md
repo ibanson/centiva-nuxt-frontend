@@ -33,7 +33,7 @@ Nuxt 3 s’est donc imposé comme choix naturel, car il offre :
 
 Le test précise qu’il ne faut pas « sur‑investir » le CSS, tout en gardant une interface agréable visuellement.
 
-Pour cela, **Tailwind CSS** a été utilisé, car il permet :
+Pour cela, **Tailwind CSS** a été un choix évident, car il permet :
 
 - de styliser rapidement sans multiplier les fichiers CSS ;
 - de garder le markup lisible ;
