@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --centiva-bg: linear-gradient(rgba(250, 251, 255, 1), rgba(250, 251, 255, 1));
+
+  --centiva-blue: #2ea2f8;
+  --centiva-blue-dark: #1c90e8;
+
+  --centiva-green: #2cf58d;
+  --centiva-green-dark: #1edb75;
+
+  --centiva-red: #ef4f55;
+  --centiva-red-dark: #d63b42;
+
+  --centiva-light: #f1f5f9;
+  --centiva-light-dark: #cbd5e1;
+
+  --centiva-text: #1c1d21;
+}
+
+@layer base {
+  body {
+    background: var(--centiva-bg);
+  }
+}
+
+@layer components {
+
+  /* Buttons styles */
+
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition;
+  }
+
+  .btn[disabled] {
+    @apply opacity-50 cursor-not-allowed;
+    filter: grayscale(40%);
+  }
+
+  .btn-primary {
+    @apply text-white bg-[color:var(--centiva-blue)] hover:bg-[color:var(--centiva-blue-dark)];
+  }
+
+  .btn-danger {
+    @apply text-white bg-[color:var(--centiva-red)] hover:bg-[color:var(--centiva-red-dark)];
+  }
+
+  .btn-light {
+    @apply text-gray-700 bg-[color:var(--centiva-light)] hover:bg-[color:var(--centiva-light-dark)]
+           hover:bg-gray-200 transition;
+  }
+
+  /* Snack */
+
+  .snackbar {
+    @apply fixed bottom-6 left-1/2 -translate-x-1/2 px-6 py-3 rounded-md shadow-lg text-white font-medium transition-opacity;
+  }
+
+  .snackbar-success {
+     background-color: var(--centiva-green);
+  }
+
+  .snackbar-error {
+    background-color: var(--centiva-red);
+  }
+
+}
