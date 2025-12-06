@@ -164,3 +164,16 @@ Ce frontend met en œuvre :
 - des alias pour rendre les imports plus lisibles.
 
 Il constitue une base simple, maintenable et conforme aux attentes du test technique Centiva pour la partie frontend.
+
+---
+
+## Conformité avec les exigences du test
+
+- [x] Frontend en **Vue avec SSR** via Nuxt 3 (rendu côté serveur pour la récupération des données)
+- [x] Consommation des **endpoints de l’API Laravel** pour manipuler les données
+- [x] Page d’**accueil listant toutes les équipes** (`/teams`)
+- [x] Page d’**équipe spécifique** (`/teams/[id]`) affichant les courtiers rattachés
+- [x] Interface permettant **d’ajouter un membre à une équipe existante** (appel à l’endpoint POST depuis le frontend)
+- [x] Action de **suppression d’une équipe** depuis la page de profil d’équipe (appel à l’endpoint DELETE, avec prise en compte du soft-delete côté API)
+- [x] Mise en page sobre avec **Tailwind CSS**, conforme à la consigne « pas de style complet » mais contenu facilement consultable
+- [x] Aucun mécanisme superflu : pas d’authentification, pas de traductions, en conformité avec les attentes pour la partie frontend
