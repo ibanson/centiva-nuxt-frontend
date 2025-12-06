@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import type { TeamsAPIResponse, Team } from '@models/team'
+import type { Team } from '@models/team'
 
 const props = defineProps<{
   teams: Team[]

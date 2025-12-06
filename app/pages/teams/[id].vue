@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
   import type { Team, TeamAPIResponse } from '@models/team'
   import { useSnackbar } from '@composables/useSnackbar'
 
@@ -12,8 +11,6 @@
   const { data, pending, error } = await useFetch<TeamAPIResponse>(`/teams/${route.params.id}`, {
     baseURL: config.public.apiBase
   })
-
-  //console.log('SSR /teams/[id] team:', team);
 
   const team: Team | null = data.value?.data ?? null
   const showAddForm= ref(false)
