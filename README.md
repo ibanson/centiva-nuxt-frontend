@@ -29,7 +29,7 @@ Nuxt 3 s’est donc imposé comme choix naturel, car il offre :
 
 ---
 
-## Tailwind CSS — rapidité et propreté
+## Tailwind CSS — pour une UI intuitive avec un minimum de CSS
 
 Le test précise qu’il ne faut pas « sur‑investir » le CSS, tout en gardant une interface agréable visuellement.
 
@@ -98,7 +98,7 @@ Pour améliorer la lisibilité et éviter les imports relatifs du type `../../..
 ```txt
 ~components   →  /components
 ~composables  →  /composables
-~utils        →  /utils (si utilisé)
+~models        →  /models (Pour une meilleure organisation des interfaces et types)
 ```
 
 Ces alias simplifient les imports et rendent le code plus clair.
