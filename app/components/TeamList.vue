@@ -12,7 +12,7 @@ const props = defineProps<{
 <template>
 
   <main class="max-w-4xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6 text-center">{{ title }}</h1>
+    <h1 v-if="title" class="text-3xl font-bold mb-6 text-center">{{ title }}</h1>
 
     <div v-if="teams.length === 0" class="text-center text-gray-500 py-10">
       Aucune équipe disponible pour le moment.
