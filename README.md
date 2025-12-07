@@ -60,6 +60,37 @@ L’objectif est d’éviter la répétition de classes et de garder une mini «
 
 ---
 
+## Structure du projet
+
+```
+app/
+├─ assets/css/
+│   └─ theme.css
+│
+├─ components/
+│   ├─ Snackbar.vue
+│   └─ TeamList.vue
+│
+├─ layouts/
+│   └─ default.vue
+│
+├─ models/
+│   ├─ broker.ts
+│   └─ team.ts
+│
+├─ pages/
+│   ├─ teams/
+│   │   ├─ [id].vue
+│   │   └─ index.vue
+│   └─ app.vue
+│
+└─ composables/
+    ├─ useApiFetch.ts
+    └─ useSnackbar.ts
+```
+
+---
+
 ## 🗂️ Architecture Nuxt 3
 
 ### Pages
@@ -98,7 +129,7 @@ Pour améliorer la lisibilité et éviter les imports relatifs du type `../../..
 ```txt
 ~components   →  /components
 ~composables  →  /composables
-~models        →  /models (Pour une meilleure organisation des interfaces et types)
+~models       →  /models (Pour une meilleure organisation des interfaces et types)
 ```
 
 Ces alias simplifient les imports et rendent le code plus clair.
@@ -133,7 +164,6 @@ Avant de lancer Nuxt, assurez-vous que le serveur Laravel est démarré :
 
 ```bash
 php artisan serve
-# ou l’équivalent selon votre environnement
 ```
 
 Sans l’API active, les pages `/teams` et `/brokers` ne pourront pas charger les données.
@@ -147,7 +177,7 @@ Sans l’API active, les pages `/teams` et `/brokers` ne pourront pas charger le
 npm install   # ou pnpm install / yarn install
 
 # Lancement du serveur de dev
-npm dev       # ou pnpm run dev / yarn dev
+npm run dev   # ou pnpm run dev / yarn dev
 ```
 
 L’application sera accessible à l’URL affichée par Nuxt (par défaut http://localhost:3000).
